@@ -1,0 +1,178 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #28126d;
+}
+#logo {
+  width: 25%;
+  cursor: pointer;
+}
+h1 {
+  display: none;
+}
+#titleSearch {
+  font-weight: bold;
+}
+.box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.box .form-search input[type=text] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: inherit;
+  font-size: 100%;
+  border: none;
+  padding: 5px 15px;
+  width: 250px;
+  height: 27px;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  border-bottom: solid 1px lightgrey;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.box .form-search input[type=text]:focus {
+  background-color: #fff;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #ccc;
+  box-shadow: none;
+  border-bottom: solid 1px lightgrey;
+}
+.box .form-search #coinsidencias {
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
+  z-index: 100;
+  position: absolute;
+}
+.box .form-search #coinsidencias ul#listaBusqueda {
+  overflow-y: scroll;
+  height: 300px;
+}
+#contenidoLista {
+  font-size: 14px;
+  align-items: center;
+  height: 100px;
+  cursor: pointer;
+}
+#contenidoLista:hover {
+  opacity: 0.9;
+  background-color: gray;
+}
+#contenidoLista span {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+#contenidoLista span #fltPoster {
+  width: 20%;
+  float: left;
+  padding-right: 5px;
+}
+.box .form-search button.btn {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: white;
+}
+.box .form-search button.btn:hover {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  border: solid 1px lightgrey;
+}
+.box .form-search button.btn:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  border: solid 1px lightgrey;
+}
+.fa-search {
+  color: grey;
+}
+.fa-search:hover {
+  opacity: 0.7;
+}
+.card {
+  color: grey;
+  border: 1px solid darkgrey;
+}
+.card-body {
+  padding: 1rem;
+  font-size: 14px;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+.poster {
+  width: 100%;
+  height: 90%;
+  cursor: pointer;
+}
+.card-body:hover {
+  /* cursor: pointer; */
+  color: white;
+  transform: scale(1.1);
+  border-radius: .25rem;
+  background: rgb(9,9,121);
+  background: -moz-linear-gradient(0deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(0deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090979",endColorstr="#00d4ff",GradientType=1);
+}
+.card-title {
+  margin: 0;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.footer {
+  background-color: lightgrey;
+}
+section {
+  background-color: white !important;
+}
+.main {
+  border: none !important;
+}
+
+/*---------- scroll ----------*/
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar:horizontal {
+  height: 7px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b5b4b4; 
+  border-radius: 5px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b5b4b4; 
+}
