@@ -1,5 +1,5 @@
 //Consumo de la API
-const api = `http://www.omdbapi.com/?s=movies&apikey=6ede1f9f`
+const api = `https://www.omdbapi.com/?s=movies&apikey=6ede1f9f`
 
 //Contenido inicial
 const contenido = document.querySelector('#movies');
