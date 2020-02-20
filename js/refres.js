@@ -109,23 +109,3 @@ function recargar(index) {
       })
   }
 }
-
-
-// function ocultar() {
-//   document.getElementById('search').style.display = 'none';
-//   document.getElementById('coinsidencias').style.display = 'none';
-// }
-// function ver() {
-//   document.getElementById('search').style.display = 'block';
-//   document.getElementById('coinsidencias').style.display = 'block';
-// }
-
-// //Paginación
-// $(document).ready(function() {
-//   $('#movies').pageMe({
-//     pagerSelector: '#page',
-//     showPrevNext: true,
-//     hidePageNumbers: false,
-//     perPage: 3
-//   });
-// });
